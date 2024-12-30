@@ -1,10 +1,10 @@
-### GraphX/KeypadC Sprite with Keys
+# Solitaire
+You know, the game but just the end animation.
 
-Demonstrates using the GraphX and KeypadC library together to move a sprite
+![Solitaire](screenshot.png)
 
-![Screenshot](screenshot.gif)
+## Usage
+Yes
 
----
-
-This demo is a part of the C SDK Toolchain for use on the CE.
-
+## Leaving
+Press Clear to exit. 

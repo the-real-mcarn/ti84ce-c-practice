@@ -1,15 +1,16 @@
 # ----------------------------
-# Set NAME to the program name
-# Set ICON to the png icon file name
-# Set DESCRIPTION to display within a compatible shell
-# Set COMPRESSED to "YES" to create a compressed program
+# Makefile Options
 # ----------------------------
 
-NAME        ?= SOLITAIR
-COMPRESSED  ?= NO
-ICON        ?= iconc.png
-DESCRIPTION ?= "C SDK Demo"
+NAME = SOLITAIR
+ICON = iconc.png
+DESCRIPTION = "Solitair but just the end animation"
+COMPRESSED = YES
+ARCHIVED = NO
+
+CFLAGS = -Wall -Wextra -Oz
+CXXFLAGS = -Wall -Wextra -Oz
 
 # ----------------------------
 
-include $(CEDEV)/include/.makefile
+include $(shell cedev-config --makefile)

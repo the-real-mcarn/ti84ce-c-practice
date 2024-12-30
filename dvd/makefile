@@ -1,15 +1,16 @@
 # ----------------------------
-# Set NAME to the program name
-# Set ICON to the png icon file name
-# Set DESCRIPTION to display within a compatible shell
-# Set COMPRESSED to "YES" to create a compressed program
+# Makefile Options
 # ----------------------------
 
-NAME        ?= DVDASM
-COMPRESSED  ?= NO
-ICON        ?= iconc.png
-DESCRIPTION ?= "C SDK Demo"
+NAME = DVDASM
+ICON = iconc.png
+DESCRIPTION = "Bouncing DVD Logo"
+COMPRESSED = YES
+ARCHIVED = NO
+
+CFLAGS = -Wall -Wextra -Oz
+CXXFLAGS = -Wall -Wextra -Oz
 
 # ----------------------------
 
-include $(CEDEV)/meta/makefile.mk
+include $(shell cedev-config --makefile)
