@@ -1,0 +1,2 @@
+# TI-84 C projects
+Import of some old TI-84 projects using the C toolchain since I set up that repository very very wrong. Also makes sure that the projects are up to date and working. It's nothing useful but here it is!. 
